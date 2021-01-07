@@ -1,0 +1,19 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+body {
+	font-family: "Quicksand", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #555555;
+}

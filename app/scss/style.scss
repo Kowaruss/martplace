@@ -2,6 +2,83 @@
 @import "global";
 @import "fonts";
 
-.header__top-inner {
+.header__top {
 	background-color: #eef1f3;
+}
+.header__top-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo > a {
+	font-size: 30px;
+	line-height: 27px;
+	color: #000;
+	font-weight: 700;
+	position: relative;
+	padding-left: 65px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		background-image: url(../img/Logo.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		left: 0;
+		top: 50%;
+		width: 60px;
+		height: 50px;
+		transform: translate(0%, -50%);
+	}
+
+	& span {
+		color: $blue;
+	}
+}
+.header__box {
+	display: flex;
+	align-items: center;
+	margin: 0 0 0 auto;
+}
+a.header__btn {
+	font-size: 14px;
+	line-height: 28px;
+	height: 35px;
+	padding: 3px 20px 0;
+	background-color: $blue;
+	border-radius: 20px;
+	color: #fff;
+	margin-right: 35px;
+}
+
+.header__box a + a {
+	width: 35px;
+	height: 35px;
+	background-color: hotpink;
+	margin-left: 15px;
+}
+
+.header__login {
+	display: flex;
+	align-items: center;
+	padding-left: 30px;
+	margin: 24px 0;
+}
+
+.header__login-ava {
+	background-color: orangered;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.header__login-text {
+	padding-left: 20px;
+	font-size: 16px;
+	line-height: 22px;
+	color: #333333;
+	font-weight: 400;
+	.login-balance {
+		color: $blue;
+	}
 }
